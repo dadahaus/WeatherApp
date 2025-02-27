@@ -1,0 +1,55 @@
+.add-city-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.header input {
+    flex-grow: 1;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+}
+
+.cancel-btn {
+    background: none;
+    border: none;
+    color: orange;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.city-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.city-list li {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    text-align: center;
+}
+
+.city-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
