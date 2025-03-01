@@ -81,8 +81,8 @@ const Weather = () => {
                         {cities.length === 0 ? (
                             <>
                                 <h2>Welcome to Weather Time!</h2>
-                                <p>➕ Press to add cities from around the world to view their date, time, and weather.</p>
-                                <p>⚙️ Press for settings.</p>
+                                <p>➕ Press this to add cities from around the world to view their date, time, and weather.</p>
+                                <p>⚙️ Press this for settings.</p>
                             </>
                         ) : (
                             <div className="city-list">
