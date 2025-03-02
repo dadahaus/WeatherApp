@@ -4,6 +4,8 @@ import settings_icon from "../assets/settings.png";
 import add_icon from "../assets/add.png";
 import AddCity from "./AddCity";
 
+
+
 const Weather = () => {
     const [cities, setCities] = useState([]);
     const [weatherData, setWeatherData] = useState({});
@@ -119,6 +121,7 @@ const Weather = () => {
             ) : (
                 <AddCity onSelectCity={addCity} onCancel={() => setShowAddCity(false)} />
             )}
+    
         </div>
     );
 };
