@@ -1,4 +1,5 @@
 import React from "react";
+import "./settings.css";
 
 const Settings = ({
   temperatureUnit,
@@ -84,7 +85,7 @@ const Settings = ({
               onChange={onSoundEffectsToggle}
             />
             {soundEffects ? "On" : "Off"}
-          </label>
+          </label>  
         </div>
 
         {/* Brightness Level */}

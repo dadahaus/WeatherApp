@@ -80,8 +80,25 @@ const Weather = () => {
     return temp;
   };
 
+  // Apply text size class to the app
+  const getTextSizeClass = () => {
+    switch (textSize) {
+      case "large":
+        return "text-large";
+      case "extra-large":
+        return "text-extra-large";
+      default:
+        return "text-normal";
+    }
+  };
+
+  // Apply brightness level to the app
+  const applyBrightness = () => ({
+    filter: `brightness(${brightnessLevel}%)`,
+  });
+
   return (
-    <div className="weather-app">
+    <div className={`weather-app ${getTextSizeClass()}`} style={applyBrightness()}>
       {!showAddCity ? (
         <>
           <div className="header">
@@ -148,7 +165,7 @@ const Weather = () => {
           textSize={textSize}
           onTextSizeChange={setTextSize}
           soundEffects={soundEffects}
-          onSoundEffectsToggle={() => setSoundEffects(!soundEffects)}
+          onSoundEffectsToggle={setSoundEffects}
           brightnessLevel={brightnessLevel}
           onBrightnessChange={setBrightnessLevel}
           onClose={() => setShowSettingsPage(false)}
