@@ -100,6 +100,19 @@ const Settings = ({
           />
           <span>{brightnessLevel}%</span>
         </div>
+          {/* Include About content at the bottom */}
+          <div className="about-section">
+          <h3>About</h3>
+          <div className="about-page">
+      <h1><strong>Weather Time</strong></h1>
+      <p>Copyright © 2023 Weather Time. All rights reserved.</p>
+      <p>Version: 1.0</p>
+      <p>Last Update: </p>
+      <p>Build Date: </p>
+      <p>Developer: </p>
+      <p>Student Number: </p>
+    </div>
+        </div>
       </div>
     </div>
   );
