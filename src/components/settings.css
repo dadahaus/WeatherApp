@@ -65,3 +65,35 @@
     padding: 20px;
     text-align: center;
   }
+
+  /* Reset Default Button */
+.reset-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #cc0000;
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #0056b3;
+}

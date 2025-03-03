@@ -12,13 +12,23 @@ const Settings = ({
   onBrightnessChange,
   onClose,
 }) => {
+  // Function to reset settings to default values
+  const resetDefaults = () => {
+    onTemperatureUnitChange("celsius");
+    onTextSizeChange("normal");
+    onBrightnessChange(50);
+  };
+
   return (
     <div className="settings-modal">
       <div className="settings-content">
         <h2>Settings</h2>
-        <button className="close-btn" onClick={onClose}>
-          &times;
-        </button>
+     {/* Reset Default Button */}
+        <div className="setting-section">
+          <button className="reset-btn" onClick={resetDefaults}>
+            Reset Default
+          </button>
+        </div>
 
         {/* Temperature Unit */}
         <div className="setting-section">
@@ -85,7 +95,7 @@ const Settings = ({
               onChange={onSoundEffectsToggle}
             />
             {soundEffects ? "On" : "Off"}
-          </label>  
+          </label>
         </div>
 
         {/* Brightness Level */}
@@ -100,18 +110,30 @@ const Settings = ({
           />
           <span>{brightnessLevel}%</span>
         </div>
-          {/* Include About content at the bottom */}
-          <div className="about-section">
+
+   
+
+        {/* Back Button */}
+        <div className="setting-section">
+          <button className="back-btn" onClick={onClose}>
+            Back
+          </button>
+        </div>
+
+        {/* About Section */}
+        <div className="about-section">
           <h3>About</h3>
           <div className="about-page">
-      <h1><strong>Weather Time</strong></h1>
-      <p>Copyright © 2023 Weather Time. All rights reserved.</p>
-      <p>Version: 1.0</p>
-      <p>Last Update: </p>
-      <p>Build Date: </p>
-      <p>Developer: </p>
-      <p>Student Number: </p>
-    </div>
+            <h1>
+              <strong>Weather Time</strong>
+            </h1>
+            <p>Copyright © 2023 Weather Time. All rights reserved.</p>
+            <p>Version: 1.0</p>
+            <p>Last Update: </p>
+            <p>Build Date: </p>
+            <p>Developer: </p>
+            <p>Student Number: </p>
+          </div>
         </div>
       </div>
     </div>
