@@ -60,3 +60,8 @@
   .text-extra-large {
     font-size: 24px;
   }
+
+  .about-page {
+    padding: 20px;
+    text-align: center;
+  }

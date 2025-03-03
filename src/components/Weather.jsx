@@ -3,13 +3,14 @@ import "./Weather.css";
 import settings_icon from "../assets/settings.png";
 import add_icon from "../assets/add.png";
 import AddCity from "./AddCity";
-import Settings from "./Settings"; // Import the Settings component
+import Settings from "./Settings";
+import About from "./About"; // Import the About component
 
 const Weather = () => {
   const [cities, setCities] = useState([]);
   const [weatherData, setWeatherData] = useState({});
   const [showAddCity, setShowAddCity] = useState(false);
-  const [showSettingsPage, setShowSettingsPage] = useState(false); // State for settings visibility
+  const [showSettingsPage, setShowSettingsPage] = useState(false);
   const [temperatureUnit, setTemperatureUnit] = useState("celsius");
   const [textSize, setTextSize] = useState("normal");
   const [soundEffects, setSoundEffects] = useState(true);
