@@ -19,6 +19,16 @@ const Settings = ({
     onBrightnessChange(50);
   };
 
+  const SoundSettings = () => {
+    // Initialize soundEffects state to true (on by default)
+    const [soundEffects, setSoundEffects] = useState(true);
+
+    // Toggle function to switch between on and off
+    const onSoundEffectsToggle = (value) => {
+      setSoundEffects(value); // Set the state to the selected value
+    };
+  }
+
   return (
     <div className="settings-modal">
       {/* Back Button */}
@@ -100,11 +110,21 @@ const Settings = ({
           <h3>Sound Effects</h3>
           <label>
             <input
-              type="checkbox"
-              checked={soundEffects}
-              onChange={onSoundEffectsToggle}
+              type="radio"
+              name="soundEffects" // Group radio buttons by name
+              checked={soundEffects === true} // Checked if soundEffects is true
+              onChange={() => onSoundEffectsToggle(true)} // Set to true when clicked
             />
-            {soundEffects ? "On" : "Off"}
+            On
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="soundEffects" // Group radio buttons by name
+              checked={soundEffects === false} // Checked if soundEffects is false
+              onChange={() => onSoundEffectsToggle(false)} // Set to false when clicked
+            />
+            Off
           </label>
         </div>
 
@@ -127,11 +147,11 @@ const Settings = ({
 
         {/* About Section */}
         <div className="about-section">
-          <h3>About</h3>
+          <h2>About</h2>
           <div className="about-page">
-            <h1>
+            <h4>
               <strong>Weather Time</strong>
-            </h1>
+            </h4>
             <p>Copyright © 2023 Weather Time. All rights reserved.</p>
             <p>Version: 1.0</p>
             <p>Last Update: </p>

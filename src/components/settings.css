@@ -25,9 +25,10 @@
 
   background-image: linear-gradient(180deg, #22b5fe, #ffbad6);
 
-  color: black;
+  color: rgb(3, 54, 130);
   margin: 4rem;
-  padding: 2rem;
+  padding: 0.2rem;
+  padding-top: 2rem;
   border-radius: 10px;
   width: 90%;
   max-width: 400px;
@@ -83,7 +84,17 @@ input[type="range"] {
 .about-page {
   padding: 20px;
   text-align: center;
+
 }
+
+.about-page>h1 {
+  /* font-size: 2rem; */
+}
+
+.about-page>p {
+  line-height: 2rem;
+}
+
 
 /* Reset Default Button */
 .reset-btn {
@@ -117,11 +128,18 @@ input[type="range"] {
 
 }
 
+input {}
+
 input[type="range"]::-webkit-slider-runnable-track {
   background: #22b5fe;
+  align-items: center;
+
+
+
 }
 
 /* For Firefox */
 input[type="range"]::-moz-range-track {
   background: #22b5fe;
+  width: 50%;
 }
