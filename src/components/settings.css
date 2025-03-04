@@ -13,7 +13,7 @@
 
 .setting-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -23,7 +23,8 @@
 
 .settings-content {
 
-  background: white;
+  background-image: linear-gradient(180deg, #22b5fe, #ffbad6);
+
   color: black;
   margin: 4rem;
   padding: 2rem;
@@ -42,7 +43,9 @@ button {
   font-size: 0.7rem;
   cursor: pointer;
   max-width: 5rem;
-  background-color: #ccabd3;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: white;
+  border-width: 0.5rem;
 }
 
 .setting-section {
@@ -114,7 +117,11 @@ input[type="range"] {
 
 }
 
-input {
-  color: #9e7ba5;
-  ;
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #22b5fe;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-track {
+  background: #22b5fe;
 }
