@@ -41,11 +41,11 @@ const Settings = ({
           </button>
           <h3> <strong>Settings</strong></h3 >
           {/* Reset Default Button */}
-          <div className="setting-section">
-            <button className="reset-btn" onClick={resetDefaults}>
-              Reset Default
-            </button>
-          </div>
+
+          <button className="reset-btn" onClick={resetDefaults}>
+            Reset Default
+          </button>
+
         </div>
 
 
