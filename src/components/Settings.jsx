@@ -39,7 +39,7 @@ const Settings = ({
           <button className="back-btn" onClick={onClose}>
             Back
           </button>
-          <h2>Settings</h2>
+          <h3> <strong>Settings</strong></h3 >
           {/* Reset Default Button */}
           <div className="setting-section">
             <button className="reset-btn" onClick={resetDefaults}>

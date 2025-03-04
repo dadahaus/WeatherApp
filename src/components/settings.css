@@ -37,13 +37,13 @@
 
 button {
   text-align: center;
-  top: 10px;
-  right: 10px;
+  /* top: 10px;
+  right: 10px; */
   background: none;
   border: none;
   font-size: 0.7rem;
   cursor: pointer;
-  max-width: 5rem;
+  width: 5rem;
   background-color: rgba(0, 0, 0, 0.2);
   border: white;
   border-width: 0.5rem;
