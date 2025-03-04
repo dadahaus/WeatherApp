@@ -21,14 +21,24 @@ const Settings = ({
 
   return (
     <div className="settings-modal">
+      {/* Back Button */}
+
       <div className="settings-content">
-        <h2>Settings</h2>
-     {/* Reset Default Button */}
-        <div className="setting-section">
-          <button className="reset-btn" onClick={resetDefaults}>
-            Reset Default
+
+        <div className="setting-header">
+          <button className="back-btn" onClick={onClose}>
+            Back
           </button>
+          <h2>Settings</h2>
+          {/* Reset Default Button */}
+          <div className="setting-section">
+            <button className="reset-btn" onClick={resetDefaults}>
+              Reset Default
+            </button>
+          </div>
         </div>
+
+
 
         {/* Temperature Unit */}
         <div className="setting-section">
@@ -111,14 +121,9 @@ const Settings = ({
           <span>{brightnessLevel}%</span>
         </div>
 
-   
 
-        {/* Back Button */}
-        <div className="setting-section">
-          <button className="back-btn" onClick={onClose}>
-            Back
-          </button>
-        </div>
+
+
 
         {/* About Section */}
         <div className="about-section">
