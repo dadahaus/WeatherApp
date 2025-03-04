@@ -14,11 +14,17 @@
 .setting-header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.setting-header>* {
+  align-self: flex-start;
 }
 
 .settings-content {
 
   background: white;
+  color: black;
   margin: 4rem;
   padding: 2rem;
   border-radius: 10px;
@@ -36,6 +42,7 @@ button {
   font-size: 0.7rem;
   cursor: pointer;
   max-width: 5rem;
+  background-color: #ccabd3;
 }
 
 .setting-section {
@@ -80,7 +87,6 @@ input[type="range"] {
   display: block;
   margin: 10px 0;
   padding: 10px 20px;
-  background: #ff4d4d;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -88,7 +94,8 @@ input[type="range"] {
 }
 
 .reset-btn:hover {
-  background: #cc0000;
+  background-color: #9e7ba5;
+
 }
 
 /* Back Button */
@@ -96,7 +103,6 @@ input[type="range"] {
   display: block;
   margin: 10px 0;
   padding: 10px 20px;
-  background: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -104,5 +110,11 @@ input[type="range"] {
 }
 
 .back-btn:hover {
-  background: #0056b3;
+  background-color: #9e7ba5;
+
+}
+
+input {
+  color: #9e7ba5;
+  ;
 }
