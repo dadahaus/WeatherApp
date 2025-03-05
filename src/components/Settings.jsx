@@ -154,10 +154,12 @@ const Settings = ({
             </h4>
             <p>Copyright © 2023 Weather Time. All rights reserved.</p>
             <p>Version: 1.0</p>
-            <p>Last Update: </p>
-            <p>Build Date: </p>
-            <p>Developer: </p>
-            <p>Student Number: </p>
+            <p>Last Update: 5/3/2025 </p>
+            <p>Build Date: 5/3/2025 </p>
+            <p>Developer: Valentin Hidalgo & Agustin Sanchez</p>
+            <p>Student Number:  </p>
+            <p>Thank you for purchasing Weather Time. If you have any issues or feedback, please contact: 1800 123 456. Data provided by [Provider]. Best efforts are taken to ensure accuracy of the data, but no guarantees are made. To view the official data, please visit the website of [Provider]”
+              Replace [Provider] with the actual provider of weather and time data, for example: OpenWeatherMap.  </p>
           </div>
         </div>
       </div>
