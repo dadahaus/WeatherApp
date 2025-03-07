@@ -3,6 +3,7 @@
   "homepage": "https://dadahaus.github.io/WeatherApp",
   "version": "0.0.0",
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
