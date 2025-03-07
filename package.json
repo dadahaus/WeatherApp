@@ -1,5 +1,6 @@
 {
   "name": "node",
+  "homepage": "https://dadahaus.github.io/acbiapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
